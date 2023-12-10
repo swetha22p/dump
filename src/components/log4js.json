@@ -1,0 +1,14 @@
+{
+  "appenders": {
+    "out": { "type": "stdout" },
+    "logstash": {
+      "type": "log4js-logstashudp",
+      "host": "localhost",
+      "port": 5044,
+      "category": "mern-app"
+    }
+  },
+  "categories": {
+    "default": { "appenders": ["out", "logstash"], "level": "info" }
+  }
+}
